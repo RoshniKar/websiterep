@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/5d20cba58a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .ul{
+      padding-top: 0%;
+      margin-top: 0%;
+box-shadow: rgba(0,0,0,0.2);
+      background-color: white;
+        position: fixed;
+        overflow: visible;
+        width: 100%;
+        }
+    li
+    {
+      padding-top: 0%;
+      margin-top: 0%;
+        list-style: none;
+        float:left;
+        overflow: visible;
+       
+        
+    }
+  img{
+    padding:50px 15px 50px 0px ;
+    width: 120px;
+  }
+     a{ margin-top: 0%;
+        font-family:"Karla", sans-serif;
+        font-weight: 500;
+        display:block;
+        font-size: 15px;
+        padding: 60px 20px 20px 20px;
+        text-decoration: none;
+        color:grey;
+    }
+    a:hover{
+        color:black;
+    }
+  
+li a:hover, .pf:hover .portfolio {
+  color:black;
+}
+
+li.pf{
+  display: inline-block;
+}
+
+.dropdown-pf {
+  font-family:"Karla", sans-serif;
+  display: none;
+  position: absolute;
+  background-color:black;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-pf a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color:grey;
+  display: block;
+  padding: 15px 20px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  text-align: left;
+
+}
+
+
+.dropdown-pf a:hover {color:white;}
+
+.pf:hover .dropdown-pf {
+  display: block;
+  overflow:visible;
+
+}
+
+.dropdown-pffeat {
+ 
+  font-family:"Karla", sans-serif;
+  display: none;
+  position: absolute;
+  background-color:black;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-pffeat a {
+  
+  object-fit: fill;
+  width: fit-content;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color:grey;
+  display: block;
+  padding: 20px 50px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  text-align: left;
+
+}
+
+.dropdown-pffeat a:hover {color:white;}
+
+.pf:hover .dropdown-pffeat {
+  display: block;
+
+  overflow:visible;
+}
+    #li{
+        font-size:17px;
+        
+    }
+    .home{
+      padding:0px 10px 20px 200px;
+    }
+    .new{
+      padding-left: 70px;      
+      margin-left: 100px;
+      float:left;
+      width: 50%;
+    }
+    h2{
+      line-height: 0px;
+    letter-spacing: 0px;
+     font-size: 32px;
+    font-family: Poppins;
+    visibility: visible;
+    text-align: inherit;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 32px;
+    border-color: rgb(226, 226, 226);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(255, 84, 67);
+    text-decoration: none;
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+     
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #h1{
+      font-size:60px;
+      line-height: 15px;
+      visibility: visible;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: inherit;
+    line-height: 59px;
+    letter-spacing: 0px;
+    font-weight: 800;
+    font-size: 59px;
+    border-color: rgb(226, 226, 226);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    }
+    #p1{
+      font-family:sans-serif;
+      font-size:16px;
+      color: grey;
+      line-height: 25px;
+    }
+    .learnmore{
+      display:block;
+      font-family: sans-serif;
+      padding:20px;
+      background-color:rgb(48, 48, 126);
+      color:white;
+      font-size: 12px;
+      font-weight: 800;
+      float: left;
+      border-radius: 8px;
+      border: 0px;
+    }
+    /**.v{
+      width:50px;
+      float:left;
+      padding: 10px 10px 20px 50px;
+    }*/
+    #video{
+      
+      color:rgb(48, 48, 126);
+     padding: 20px;
+      font-family: sans-serif;
+      font-size: 20px;
+    
+    }
+    .slider{
+      width: 600px;
+      padding:0px;
+             
+    }
+    h3{
+      text-align: center;
+      font-family: monospace;
+      color:red;
+      font-size:15px;
+    }
+    #far{
+      color:rgb(42, 42, 80);
+      font-family: sans-serif;
+      font-size:25px;
+      text-align: center;
+      line-height: 40px;
+    }
+    #i1{
+      
+      width:18%;
+      float:left;
+    }
+    #i2{
+      width:18%;
+      float:left;
+    }
+    #i3{
+      width:18%;
+      float:left;
+    }
+    #i4{
+      width:18%;
+      float:left;
+    }
+    #i5{
+      width:18%;
+      float:left;
+    }
+    .h4{
+      text-align: center;
+      color:grey;
+      font-family: sans-serif;
+      font-size:15;
+      line-height: 0%;
+
+    }
+    h6{
+      line-height: 0%;
+      color: grey;
+      clear:left;
+      font-family: sans-serif;
+      font-size:15px;
+    }
+    
+    #p3{
+      
+      line-height: 0%;
+      font-family: sans-serif;
+      color:red;
+      font-weight: 700;
+      font-size:50px;
+    }
+    #power
+    {
+      float:right;
+      margin-left: 0%;
+      width:50%;
+    }
+    #i6
+    {
+      float: left;
+      width: 400px;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+
+    
+    h5{ 
+      line-height: 0%;
+      font-family: sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size:50px;
+
+    }
+    #email{
+      text-align: left;
+      border: 0px;
+      padding: 30px;
+      margin-left: 480px;
+      float:left;
+    }
+#subscribe{
+  display:block;
+      font-family: sans-serif;
+      padding:30px;
+      background-color:rgb(48, 48, 126);
+      color:white;
+      font-size: 12px;
+      border: 0px;
+      float: left;
+      
+      
+}
+#d1{
+  clear:left;
+  float:left;
+  width:22%;
+  margin: 15px;
+  
+}
+#d2{
+  float:left;
+  width:22%;
+  margin: 15px;
+}
+#d3{
+  float:left;
+  width:22%;
+  margin: 15px;
+}
+#d4{
+  float:left;
+  width:22%;
+}
+.d21{
+  font-size: 13px;
+  line-height: 20px;
+font-family: sans-serif;
+color: grey;
+}
+.d31
+{
+  font-size: 16px;
+  line-height: 20px;
+font-family: sans-serif;
+color:black;
+font-weight: 800;
+}
+#f1{
+float:left;
+width:25%;
+}
+#f2{
+float:left;
+width:25%;
+}
+#f3{
+float:left;
+width:25%;
+}
+#f4{
+float:left;
+width:25%;
+}
+#footer a:hover{
+  color: black;
+}
+*
+        {
+            box-sizing:border-box;
+        }
+        .icons 
+        {
+            float:left;
+            width:33.33%;
+            padding:40px;
+        }
+        ul{
+            padding-left:120px;
+        }
+        ul li
+        {
+            font-size:1.2vw;
+
+        }
+        #lmore
+        {
+            padding:15px 30px;
+            background-color:red;
+            color:white;
+            border:1px solid red;
+            border-radius:30px;
+        }
+        .icon2
+        {
+            float:left;
+            width:33.33%;
+            padding:50px;
+            overflow:auto; 
+        }
+        .icon3
+        {
+            float:right;
+            width:25%;
+            padding:50px;
+        }
+        .icon4
+        {
+            float:left;
+            width:20%;
+        
+        }
+        .footer
+        {
+            float:left;
+            width:25%;
+            padding:50px;
+        }
+        .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+        }
+        </style>
+</head>
+<body>
+  <div id="image">
+    
+    </div>
+
+    
+    <ul class="ul">
+       <li><img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/logo.png" ></li> 
+       <div id="li"> <li class="home"><a href >Home</a></li>
+        <li><a href>Demos</a></li>
+        <li><a href>Shop</a></li>
+      
+        <li class="pf"><a href class="portfolio">Pages  <i style="padding-left: 5px;" class="fas fa-chevron-circle-down"></i></a>
+          <div class="dropdown-pf">
+
+              <a href>About <i style="padding-left: 120px; padding-right: 0%;" class="fas fa-angle-right"></i></a>                    
+              <a href>Services <i style="padding-left: 106px; padding-right: 0%;" class="fas fa-angle-right"></i></a>
+              <a href>Contact <i style="padding-left: 110px; padding-right: 0%;" class="fas fa-angle-right"></i></a>
+              <a href>Team <i style="padding-left: 124px; padding-right: 0%;" class="fas fa-angle-right"></i></a>
+              <a href>Price Table</a>
+              <a href>Maintenance</a>
+              <a href>Coming Soon</a>
+              <a href>404 Page</a>
+           </div>
+          </li>
+        
+          <li class="pf"><a href class="portfolio">Features <i style="padding-left: 5px;" class="fas fa-chevron-circle-down"></i></a>
+            <div class="dropdown-pffeat" id="features" style="overflow: visible;position: absolute;" >
+                <div id="f1">
+                    <a href>Counters</a>
+                    <a href>Countdowns</a>
+                    <a href>Dividers</a>
+                    <a href>Dropcaps</a>
+                    <a href>Featured</a>
+                    <a href>Flip boxes</a>
+                    <a href>Icon Lists</a></div>
+              <div id="f2">
+                            <a href>Counters</a>
+                            <a href>Countdowns</a>
+                            <a href>Dividers</a>
+                            <a href>Dropcaps</a>
+                            <a href>Featured</a>
+                            <a href>Flip boxes</a>
+                            <a href>Icon Lists</a></div>
+           
+            <div id="f3">
+              <a href>Icons</a>
+              <a href>Images</a>
+              <a href>personnel</a>
+              <a href>Price Table</a>
+              <a href>Promo Boxes</a>
+              <a href>Skill bar</a>
+              <a href>Skill Cycle</a></div>
+              <div id="f4">
+                <a href>Shape divider</a>
+                <a href>Social shares</a>
+                <a href>Stunning texts</a>
+                <a href>Tabs horizontal</a>
+                <a href>Tabs vertical</a>
+                <a href>Titles</a>
+                <a href>Typography</a></div>
+                
+</div>
+            </li>
+        <li class="pf"><a href class="portfolio">Portfolio<i style="padding-left: 5px;" class="fas fa-chevron-circle-down"></i></a>
+        <div class="dropdown-pf">
+                        <a href>Portfolio Columns With Frame</a>
+                        <a href>Portfolio Columns With Excerpt</a>
+                        <a href>Portfolio Columns With Excerpt No Space</a>
+                        <a href>Portfolio Grid With Description No Space</a>
+                        <a href>Portfolio Grid With Description</a>
+                        <a href>Portfolio Columns</a>
+                        <a href>Portfolio Columns No Space</a>
+                        <a href>View All Layouts</a>
+         </div>
+        </li>
+      
+        <li class="pf"><a href class="portfolio">Blog<i style="padding-left: 5px;" class="fas fa-chevron-circle-down"></i></a>
+            <div class="dropdown-pf">
+                            <a href class="blog">Blog Columns</a>
+                            <a href class="blog">Blog Modern 3 Columns</a>
+                            <a href class="blog">Blog 3 Columns</a>
+                            <a href class="blog">Blog Columns Masonry</a>
+                            <a href class="blog">Blog Full</a>
+                            <a href class="blog">Blog Full With Frame</a>
+                            <a href class="blog">View All Layouts</a>
+             </div>
+            </li>
+            <li><a href>Gallery<i style="padding-left: 30px;" class="fas fa-search"></i></a></li>
+            </div>
+      </ul>
+      <br> 
+      <br>   
+      <br> 
+      <br> 
+      <br> 
+      <br>   
+      <br> 
+      <br> 
+      <br>
+      <br> 
+      <br> 
+      <br> 
+      <br> 
+     
+      
+
+      <div class="new" style="margin-left: 30px;">
+      <h2>New Era Of WordPress Theme</h2>
+      <br>
+      <h1 id="h1"><b>Introducing Infinite</b></h1>
+      <br><br>
+      
+      <p id="p1">Bring your Website to the next level with Infinite<br>
+          One of the most powerful WordPress Theme on Earth!<br>
+        Featured with super powerful page builder and admin panel </p>
+        <br>
+        <br>
+        
+        <button class="learnmore" >LEARN MORE</button>
+        <img  style="width:20%;overflow: auto;float:left;padding: 10px 20px 30px 60px;"src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/slider-1-5.png">
+        <div id="video" >Video Introduction</div>
+    </div>
+    <img class="slider" src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/slider-1-4.png">
+<br>
+<div class="clearfix">
+  <div class="icons" style="padding-left:120px;">
+          <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/icon-svc1.png">
+          <br>
+         <br>
+          <h3 style="color: black;font-size: 18px;font-weight: 700; text-align:left;">New Technology</h3>
+          
+         <p style="color:rgb(195,192,180);"> Bring your website to he ntext level with Infinite. One of the most powerful WordPress Theme on earth!</p>
+      </div>
+      <div class="icons">
+          <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/icon-svc2.png">
+          <br>
+          <h3 style="color: black;font-size: 18px;font-weight: 700;text-align:left;" >High Standard Coding</h3>
+          
+          <p  style="color:rgb(195,192,180);">Bring your website to he ntext level with Infinite. One of the most powerful WordPress Theme on earth!</p>
+      </div>
+      <div class="icons" style="padding-right:120px;">
+          <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/icon-svc3.png">
+          <br>
+          <h3 style="color: black;font-size: 18px;font-weight: 700; text-align:left;">Full of Options</h3>
+          
+          <p  style="color:rgb(195,192,180);">Bring your website to he ntext level with Infinite. One of the most powerful WordPress Theme on earth!</p>
+      </div> 
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+                
+<p style="width:50%;padding-left:130px;margin:auto;text-align:centre;color:red;font-size:1.33vw;"><b>THE MOST POWERFUL THEME ON EARTH</b></p>
+<br>
+<p style="font-size:1.5vw;margin:auto;text-align:centre;width:50%;color:rgb(105,101,87);">Far far away, behind the word mountains, far from the countries Vokalia<br></p>
+<p style="padding-left:30px;font-size:1.5vw;margin:auto;text-align:centre;width:50%;color:rgb(105,101,87);">and Consonantia, there live the blind texts. Separated they live in<br></p> 
+ <p style="padding-left:150px;font-size:1.5vw;margin:auto;text-align:centre;width:50%;color:rgb(105,101,87);">Bookmarksgrove right at the coast.</p>
+ <br>
+ <p style="padding-left:30px;margin:auto;text-align:centre;width:50%;color:rgb(184,184,184);font-size:1.2vw;">We provide complete solutions to our clients so they can focus their core business</p>
+<br><br>
+<br>
+<br>
+<br>
+<div overflow="auto" style="clear: both;padding-left:50px">
+    <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/creative-BG.jpg" style="float:right;padding-top:60px;width:500px; clear: both;">
+      <br><br><br><br><br>
+    <span style="font-size: 13px;
+    font-weight: 700;
+       font-style: normal;
+       letter-spacing: 3px;
+       text-transform: uppercase;
+       color: #bfbfbf;"><b> LIMITLESS POSSIBILITIES CREATE<b></span><br><br>
+       <span style="font-size: 38px;
+       letter-spacing: 0px;
+       text-transform: none;
+       color: #222d71;"><b>Incredible Layouts</b></span><br><br><br>
+       <span style="color: #353535;
+       font-size: 17px;
+       font-weight: 400;
+       text-transform: none;">Full wrapper and sidebar wrapper</span><br><br>
+       <span style="color: #353535;
+       font-size: 17px;
+       font-weight: 400;
+       text-transform: none;">Columns wrappers</span><br><br>
+       <span style="color: #353535;
+       font-size: 17px;
+       font-weight: 400;
+       text-transform: none;">More than 40 element items</span><br><br>
+       <span style="color: #353535;
+       font-size: 17px;
+       font-weight: 400;
+       text-transform: none;">Many pre-built templates</span><br><br><br><br>
+   
+       <span style="color: #bfbfbf;">Bring your website to he ntext level with Infinite. One of the most powerful WordPress Theme on earth!</span><br>
+       <br><br>
+       <button type="button" class="learnmore" style="background-color: red;"> LEARN MORE</button><br>
+       <br><br>
+  </div>    
+  <div overflow="auto" style="clear: both;padding-left:50px">
+      <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/manager-11.jpg" style="float:left;padding-top:60px;width:600px; clear: both;">
+        <br><br><br><br><br>
+        <div style="margin-left: 100px;">
+            <br><br><br><br>
+      <span style="font-size: 13px;
+      font-weight: 700;
+         font-style: normal;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+         color: #bfbfbf;"><b> BE WISE AND CHOOSE<b></span><br><br>
+         <span style="font-size: 38px;
+         letter-spacing: 0px;
+         text-transform: none;
+         color: red;"><b>Power Elite Author</b></span><br><br><br>
+         <span style="color: #353535;
+         font-size: 17px;
+         font-weight: 400;
+         text-transform: none;">Over 140,000 Sales</span><br><br>
+         <span style="color: #353535;
+         font-size: 17px;
+         font-weight: 400;
+         text-transform: none;">More than 50 WordPress Themes</span><br><br>
+         <span style="color: #353535;
+         font-size: 17px;
+         font-weight: 400;
+         text-transform: none;">Dedicated Support Team</span><br><br><br>
+         
+     
+         <span style="color: #bfbfbf;">We are the top author of Themeforest, Power Elite Author. There are not much authors who hit power eilite level and with 5 years of expereinces. We know what exactly you want. We promise to deliver the best products with great after sales support and we won’t let you down.
+
+          </span><br>
+         <br><br>
+        
+        </div>
+    </div>    
+
+
+
+<div class="clearfix" style="clear: both;">
+<div class="icon2" style="padding-left:120px;">
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/idea-.png">
+<br>
+<p style="font-size:1.5vw;color:red;"><b>Creative Web Design</b></p>
+<p style="color:rgb(105,101,87);">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/creativity.png">
+<br>
+<p style="font-size:1.5vw;color:red;"><b>Get Inspired</b></p>
+<p style="color:rgb(105,101,87);">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+</div>
+<div class="icon2">
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/sketch.png">
+<br>
+<p style="font-size:1.5vw;color:red;"><b>User Friendly Tool</b></p>
+<p style="color:rgb(105,101,87);">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+<br><br>
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/message.png">
+<br>
+<p style="font-size:1.5vw;color:red;"><b>Be Creative</b></p>
+<p style="color:rgb(105,101,87);">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+</div>
+<div class="icon2" style="padding-right:120px;">
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/layers.png">
+<br>
+<p style="font-size:1.5vw;color:red;"><b>Web Development</b></p>
+<p style="color:rgb(105,101,87);">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/network.png">
+<br>
+
+<p style="font-size:1.5vw;color:red;"><b>Be Socialized</b></p>
+<p style="color:rgb(105,101,87);">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+</div>
+</div>
+<br><br>
+<div class="clearfix">
+<div class="icon3" style="padding-right:150px;">
+<p style="font-size:3vw;color:red;padding-left:50px"><b>22</b></p>
+<p style="font-size:1.2vw;color:rgb(105,101,87);">Offices Across The Region</p> 
+</div>
+<div class="icon3">
+<p style="font-size:3vw;color:red;padding-left:80px;"><b>24</b></p>
+<p style="font-size:1.2vw;color:rgb(105,101,87);padding-left:55px;">Support Hours</p>
+</div>   
+<div class="icon3">
+<p style="font-size:3vw;color:red;padding-left:140px;"><b>342</b></p>
+<p style="font-size:1.2vw;color:rgb(105,101,87);padding-left:110px;">Projects delivered</p> 
+</div>  
+<div class="icon3" style="padding-left:150px;">
+<p style="font-size:3vw;color:red;width:25%;padding-left:50px;"><b>99%</b></p>
+<p style="font-size:1.2vw;color:rgb(105,101,87);">Customer's Satisfaction</p>
+</div> 
+</div>  
+<div overflow="auto" style="clear: both;padding-left:50px">
+    <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/02/office.jpg" style="float:right;padding:100px;width:800px; clear: both;">
+      <br><br><br><br><br><br><br>
+    <span style="font-size: 13px;
+    font-weight: 700;
+       font-style: normal;
+       letter-spacing: 3px;
+       text-transform: uppercase;
+       color: #bfbfbf;"><b> WHAT THEY SAY<b></span><br><br>
+       <span style="font-size: 38px;
+       letter-spacing: 0px;
+       text-transform: none;
+       color: #222d71;"><b>Testimonial</b></span>
+       <br><br><br><br>
+   
+       <span style="color: rgb(105,101,87);font-size: 20px;">“ A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear.</span><br>
+       <br>
+        
+        <div class="clearfix">
+            <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2016/05/psinfinite5-150x150.jpg"  style="float: left;">
+           <br><br><br><br>
+            <div style="float:left;">
+            <h2 style="color: #ff5443; 
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            text-transform: none;">John Smith</h2>
+            <h4 style="font-size: 14px; 
+            font-style: normal">Journalist,London</h4></div>
+            </div>
+
+  </div>    
+
+
+
+</div> 
+<p style="padding-left:120px;font-size:1.3vw;color:rgb(105,101,87);padding-top:150px;margin:0px;">GET UPDATE WITH US</p>
+<p style="padding-left:120px;font-size:3vw;color:black;margin:0px;padding-top:10px;"><b>Recent News</b></p>
+<br><br>
+<div class="clearfix">
+<div class="icon2">
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2016/06/shutterstock_415926982-400x257.jpg" style="padding-left:50px;width:450px;height:300px;padding-bottom:20px;"><br>
+<a href="https://demo.goodlayers.com/infinite/homepages/main3/2016/06/06/this-is-an-awesome-sticky-post/"
+style="font-size:1.2vw;color:black;padding-left:110px;text-decoration:none;"><b>This Is An Awesome Sticky Post</b></a>
+<p style="font-size:1.1vw;color:rgb(105,101,87);padding-left:110px;">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which...</p>
+<p style="font-size:1.1vw;color:rgb(105,101,87);padding-left:110px;">June 6, 2016•John Doe</p>
+</div>
+<div class="icon2">
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2016/06/shutterstock_693800956-400x257.jpg" style="width:400px;height:300px;padding-bottom:20px;">
+<a href="https://demo.goodlayers.com/infinite/homepages/main3/2016/06/06/the-surfing-man-will-blow-your-mind/"
+style="font-size:1.2vw;color:black;padding-left:50px;text-decoration:none;"><b>The Surfing Man Will Blow Your Mind</b></a>
+<p style="font-size:1.1vw;color:rgb(105,101,87);padding-left:50px;padding-right:60px;">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which...</p>
+<p style="font-size:1.1vw;color:rgb(105,101,87);padding-left:50px;">June 6, 2016•John Doe</p>
+</div>
+<div class="icon2">
+<img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2016/06/shutterstock_695968663-400x257.jpg" style="padding-right:50px;height:300px;width:450px;padding-bottom:20px;">
+<a href="https://demo.goodlayers.com/infinite/homepages/main3/2016/06/06/standard-post-type/"
+style="font-size:1.2vw;color:black;padding-right:120px;text-decoration:none;padding-left:80px"><b>Standard Post Type</b></a>
+<p style="font-size:1.1vw;color:rgb(105,101,87);padding-right:110px;padding-left:20px;">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which...</p>
+<p style="font-size:1.1vw;color:rgb(105,101,87);padding-left:50px;">June 6, 2016•John Doe</p>
+</div>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h3>CLIENTS REALLY LOVE US</h3>
+    
+<p id="far">Far far away, behind the word mountains, far from the <br>countries Vokalia and Consonantia, there live the blind texts.</p>
+<br>
+
+
+<img id="i1" onmouseover="key-vision1" src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/key-vision1.png">
+<img id="i2" src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/key-vision2.png">
+<img id="i3" src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/key-vision3.png">
+<img id="i4" src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/key-vision4.png">
+<img id="i5" src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/key-vision5.png">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4 class="h4" style="clear: both;font-weight: 700;
+font-style: normal;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #c1c1c1;
+margin-bottom: 15px;">SUBSCRIBE TO NEWSLETTER</h4>
+<h5 style="font-size: 50px; font-family: sans-serif;font-weight: 700;text-align: center;line-height: 0%;font-size: 40px;
+font-weight: 700;
+letter-spacing: 0px;
+text-transform: none;
+color: #1c1c1c;"><b>Get Update With Us</b></h5>
+
+<input type="email" id="email" placeholder="Your Email Address">
+<button id="subscribe" >SUBSCRIBE</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="d1" style="padding-left: 20px;">
+  <br>
+
+    <img src="https://demo.goodlayers.com/infinite/homepages/main3/wp-content/uploads/sites/27/2019/03/logo.png" >
+    <p class="d21" style="color:rgb(141, 140, 140)">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    </p>
+
+</div>
+<div id="d2">
+    <br>
+    <br>
+    <br>
+  <br>  
+  <br>
+  <span class="d31" >Contact Us </span><br>
+  <br><br><br>
+  <span class="d21" style="color:rgb(141, 140, 140)">3233<br>
+  1810 Kings Way<br>
+  King Street, 5th Avenue, New York</span><br>
+  <br>
+ <span style="color: blue;">+1-2355-3345-5<br>
+  Contact@Attornasite.co</span>
+</div>
+<div id="d3">
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+  <span class="d31" >Hot Links</span>
+  <br><br><br>
+  <br>
+  <span class="d21" style="color:rgb(141, 140, 140)" >
+   Frequently asked questions</a><br><br>
+     Story About Us</a><br><br>
+    Our Works</a><br><br>
+  Services We provided</a>
+  </span>
+</div>
+<div id="d4">
+    <br>
+    <br>
+    <br>
+    <br>
+  <br><br>
+    <span class="d31" >Follow Us</span>
+    <br><br><br><br>
+    <i style ="padding-right: 20px;" class="fab fa-facebook-f"></i>
+    <i style ="padding-right: 20px;" class="fab fa-twitter"></i>
+    <i style ="padding-right: 20px;" class="fab fa-linkedin-in"></i>
+    <i style ="padding-right: 20px;" class="fab fa-pinterest"></i>
+    <i style ="padding-right: 20px;" class="fab fa-instagram"></i>
+
+
+</div>
+<br>
+    <br>
+    <br>
+  <br><br><br>
+  <br>
+  <br>
+<br><br>
+<div  id="footer">
+  <ul >
+    <li style="color: grey; clear:left;" ><br><br><br> 2018. GoodLayers.All rights reserved.</li>
+    <li class="home" ><a href="#" style="padding-left: 400px;">Home</a></li>
+    <li ><a href="#" >About</a></li>
+    <li ><a href="#" >News</a></li>
+    <li ><a href="#" >Contact</a></li>
+  </ul>
+</div>
+
+
+</body>
+</html>
