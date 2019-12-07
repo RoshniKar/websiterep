@@ -499,7 +499,5 @@ width:25%;
     <li><a href>Contact</a></li>
   </ul>
 </div>
-
-
 </body>
 </html>
